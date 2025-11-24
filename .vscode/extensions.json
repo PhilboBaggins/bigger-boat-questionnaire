@@ -1,6 +1,7 @@
 {
     "recommendations": [
         "davidanson.vscode-markdownlint",
-        "ban.spellright"
+        "ban.spellright",
+        "myriad-dreamin.tinymist"
     ]
 }
