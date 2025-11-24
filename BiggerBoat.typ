@@ -19,7 +19,7 @@
   align: left + horizon,
   inset: (y: 2mm, x: 0mm),
 
-  [== What are we going to need?],
+  [== What are we gonna need?],
   [(for next time)],
   checkbox("A bigger boat"),
   checkbox("More snacks"),
