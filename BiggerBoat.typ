@@ -44,26 +44,27 @@
   fit: "cover",
 )
 
+#let columns = (
+  100% * left-right-scaling,
+  100% * (1 - left-right-scaling),
+);
+
+#let inset = (0mm, 2mm);
+
 #grid(
   rows: 100%,
-  columns: (
-    100% * left-right-scaling,
-    100% * (1 - left-right-scaling),
-  ),
+  columns: columns,
   align: left + horizon,
-  inset: (0mm, 2mm),
+  inset: inset,
 
   photo, questionaire,
 )
 
 #grid(
   rows: 100%,
-  columns: (
-    100% * (1 - left-right-scaling),
-    100% * left-right-scaling,
-  ),
+  columns: columns.rev(),
   align: left + horizon,
-  inset: (2mm, 0mm),
+  inset: inset.rev(),
 
   questionaire, photo,
 )
